@@ -1,0 +1,68 @@
+.container {
+  margin: 3rem auto auto auto;
+  width: 20%;
+  min-width: 18rem;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'greeting'
+    'title'
+    'auth-form';
+  grid-template-columns: 100%;
+  grid-template-rows: 2.5rem 3.5rem 3.5rem 1fr;
+  border: 0.1rem solid #7a86b6;
+}
+
+.header,
+.greeting,
+.title,
+.auth-form {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.header {
+  background-color: #7a86b6;
+  grid-area: header;
+}
+
+.greeting {
+  background-color: #a8a4ce;
+  grid-area: greeting;
+}
+
+.title {
+  background-color: #7a86b6;
+  grid-area: title;
+}
+.auth-form {
+  color: #7a86b6;
+  grid-area: auth-form;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.auth-form input {
+  border: 0.1rem solid #7a86b6;
+  border-radius: 0;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 65%;
+  height: 2rem;
+}
+
+.auth-form button {
+  width: 75%;
+  padding: 0.5rem;
+  background-color: #7a86b6;
+  border: 0.1rem solid #7a86b6;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #a8a4ce;
+  border: 0.1rem solid #a8a4ce;
+}
